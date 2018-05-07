@@ -50,27 +50,27 @@ public class EntityController : MonoBehaviour {
 		}
 
 		timer += Time.deltaTime;
-		hungerTimer += Time.deltaTime;
-		//Debug.Log ("Time is at: " + hungerTimer);
-		if (hungerTimer > hungerRate) 
-		{
-			
-			Debug.Log ("Hunger is now at: " + fullness);
-			if (fullness < 0) {
-				Debug.Log ("Yer dead, bro.");
-				idle (false);
-				move (false);
-				hurt (false);
-				isDead (true);
-			} else {
-				fullness -= 40;
-				idle (false);
-				move (false);
-				isDead (false);
-				hurt (true);
-			}
-			hungerTimer = 0;
-		}
+//		hungerTimer += Time.deltaTime;
+//		//Debug.Log ("Time is at: " + hungerTimer);
+//		if (hungerTimer > hungerRate) 
+//		{
+//			
+//			Debug.Log ("Hunger is now at: " + fullness);
+//			if (fullness < 0) {
+//				Debug.Log ("Yer dead, bro.");
+//				idle (false);
+//				move (false);
+//				hurt (false);
+//				isDead (true);
+//			} else {
+//				fullness -= 40;
+//				idle (false);
+//				move (false);
+//				isDead (false);
+//				hurt (true);
+//			}
+//			hungerTimer = 0;
+//		}
 
 		if (timer <= updateRate) 
 		{
